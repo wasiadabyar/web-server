@@ -17,7 +17,7 @@ app.use(express.static(publicPath))
 app.use(express.static(viewPath))
 
 app.get('/', (req, res) => {
-    res.send('<h1>this is web server</h1>');
+    res.render('index')
 });
 
 app.get('/home', (req, res) => {
